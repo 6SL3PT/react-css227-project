@@ -1,6 +1,7 @@
 # Music Service Web Project
 
-This repository is created for practice & study. A music service web made with MERN stack, this branch is for server back-end of both sites (client & admin).
+## Server Side Branch
+This repository is created for practice & study. A music service web made with MERN stack, this branch is for server of both sites (client & admin).
 
 The original purpose of this project is to complete the assignment (KMUTT, CSS227), which had minimum functionality requirement as follow:
 
