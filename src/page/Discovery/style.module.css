@@ -1,0 +1,109 @@
+.Container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#Showcase {
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)),
+        url('/src/images/discovery_showcase.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    color: white;
+    text-align: left;
+    font-weight: 700;
+    padding: 170px 0 30px 0;
+    margin-bottom: 30px;
+}
+
+.Discover_playlistContainer {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.Discover_trackAndTopWrapper {
+    margin-bottom: 100px;
+}
+
+.Discover_trackContainer {
+    width: 85%;
+    margin: 60px auto 0 auto;
+}
+
+.Discover_headerGroup {
+    display: flex;
+    align-items: baseline;
+    color: white;
+    user-select: none;
+}
+
+.Discover_headerGroup p {
+    margin-left: 40px;
+    color: darkgrey;
+    font-weight: 700;
+}
+
+.Discover_headerGroup p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.loadingWrapper_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.playlistWrapper_container,
+.trackWrapper_container {
+    margin-bottom: 20px;
+}
+
+.playlistWrapper_container {
+    max-height: 243px;
+    overflow-y: hidden;
+}
+
+.playlistContainer_frameWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, max-content));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.trackWrapper_container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    .Discover_playlistContainer,
+    .Discover_trackContainer {
+        width: 98%;
+    }
+}
+
+@media (max-width: 630px) {
+    .playlistWrapper_container {
+        max-height: 170px;
+    }
+
+    .playlistContainer_frameWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+    }
+}
+
+@media (max-width: 400px) {
+    .playlistWrapper_container {
+        max-height: 200px;
+    }
+
+    .playlistContainer_frameWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+    }
+}
+
+.___displayAll {
+    max-height: none;
+}

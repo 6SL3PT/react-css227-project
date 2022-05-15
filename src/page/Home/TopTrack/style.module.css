@@ -1,0 +1,87 @@
+.TopTrack_container {
+    width: 90%;
+    margin: auto auto 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.TopTrack_imageWrapper {
+    width: 50%;
+}
+
+.TopTrack_textWrapper {
+    width: 50%;
+}
+
+.TopTrack_image {
+    cursor: pointer;
+    display: block;
+    width: 90%;
+    margin: 0 0 10px 0;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.TopTrack_name,
+.TopTrack_artist,
+.TopTrack_favAmount {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.TopTrack_name {
+    margin: 3% 0.5vw 0 0;
+    font-size: 1vw;
+    font-weight: 500;
+    line-height: 1rem;
+}
+
+.TopTrack_name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.TopTrack_artist {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.TopTrack_favAmount {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.TopTrack_btnWrapper {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 40px;
+    gap: 10px;
+    align-items: center;
+}
+
+#MoreBtn {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1080px) {
+    .TopTrack_container {
+        width: 30%;
+    }
+
+    .TopTrack_name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .TopTrack_container {
+        width: 85%;
+    }
+}

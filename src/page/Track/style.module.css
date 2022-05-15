@@ -1,0 +1,217 @@
+#Track {
+    padding: 100px 0;
+    color: white;
+}
+
+.TrackContentWrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.TrackContent_trackDetailWrapper {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.TrackDetail_topElementWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.TrackDetail_topElementWrapper img {
+    height: 250px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.TrackDetail_topElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.TrackDetail_previewText h1,
+.TrackDetail_previewText p {
+    margin: 0;
+}
+
+.TrackDetail_previewText h1 {
+    padding-top: 10px;
+    font-size: min(3vmax, 30px);
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#Type {
+    padding-top: 20px;
+    font-size: min(3vmax, 15px);
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.TrackDetail_btnControl {
+    display: flex;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+.TrackDetail_btnControl button {
+    height: 60px !important;
+    width: 60px !important;
+}
+
+.TrackDetail_btnControl > button > svg {
+    height: 40px;
+    width: 40px;
+}
+
+#TrackBtn_favBtn {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.TrackDetail_bottomElement {
+    margin-top: 60px;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.TrackDetail_bottomElement h2,
+.TrackDetail_bottomElement p:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.TrackDetail_bottomElement table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.BottomElement_type {
+    width: 115px;
+}
+
+.BottomElement_data {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+.TrackContent_trackLyricWrapper {
+    width: 40%;
+    border-left: 2px solid white;
+    padding-left: 20px;
+}
+
+.TrackContent_trackLyricWrapper h2 {
+    margin-top: 0;
+    padding-left: 20px;
+}
+
+.TrackLyric_frame {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    height: 447.6px;
+    border-radius: 8px;
+}
+
+.TrackLyric_body {
+    margin: 2.5px 0;
+    height: 442.6px;
+    overflow-y: scroll;
+    overscroll-behavior: none;
+}
+
+.TrackLyric_body::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.TrackLyric_body::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 8px;
+}
+
+@media (max-width: 980px) {
+    .TrackContentWrapper {
+        display: block;
+    }
+
+    .TrackContent_trackDetailWrapper,
+    .TrackContent_trackLyricWrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .TrackContent_trackLyricWrapper {
+        margin-top: 20px;
+        border: none;
+    }
+
+    .TrackLyric_body {
+        text-align: center;
+    }
+}
+
+@media (max-width: 585px) {
+    .TrackContentWrapper {
+        width: 98%;
+    }
+
+    .TrackDetail_topElementWrapper img {
+        height: 200px;
+    }
+
+    #Type {
+        padding-top: 5px;
+    }
+
+    .TrackDetail_btnControl {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 465px) {
+    .TrackDetail_topElementWrapper {
+        gap: 10px;
+    }
+
+    .TrackDetail_topElementWrapper img {
+        height: 30vw;
+    }
+
+    .TrackDetail_previewText h1 {
+        padding-top: 0;
+    }
+
+    #Type {
+        display: none;
+    }
+
+    .TrackDetail_btnControl {
+        padding-bottom: 0;
+        gap: 2px;
+        height: 40px;
+    }
+
+    .TrackDetail_btnControl button {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .TrackDetail_btnControl > button > svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .TrackLyric_body {
+        overscroll-behavior: auto;
+    }
+}

@@ -1,0 +1,254 @@
+.TrackTable_container {
+    width: 98%;
+    margin: 0 auto;
+    counter-reset: section;
+    border-collapse: collapse;
+    color: grey;
+    user-select: none;
+}
+
+.TrackTable_container table {
+    table-layout: fixed;
+}
+
+.TrackTable_container td {
+    max-width: 0;
+}
+
+.TrackTable_container thead tr {
+    border-bottom: white solid 1px;
+}
+
+.___isSortable thead tr th:not(:first-child):hover {
+    color: white;
+}
+
+.TrackTable_container thead::after {
+    content: '';
+    display: block;
+    height: 10px;
+}
+
+.TrackTable_container tbody tr td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.TrackTable_container tbody tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.TrackTable_container tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.TrackTable_container tbody tr > td {
+    padding: 5px 0;
+}
+
+.TrackBody_rowCounter:before {
+    counter-increment: section;
+    content: counter(section);
+}
+
+/* Number Column */
+
+.TrackHeader_rowCounter,
+.TrackBody_rowCounter {
+    width: 5%;
+    min-width: 60px;
+    text-align: center;
+}
+
+.___isHover {
+    color: transparent;
+}
+
+.TrackBody_rowCounter button {
+    background-color: transparent !important;
+    transform: translateX(-14%);
+}
+
+.TrackBody_rowCounter svg {
+    height: 30px;
+    width: 30px;
+}
+
+/* Title Column */
+.TrackHeader_title,
+.TrackHeaderFav_title {
+    width: 45%;
+    text-align: left;
+    display: flex;
+}
+
+.TrackBody_title,
+.TrackBodyFav_title {
+    width: 45%;
+    white-space: nowrap;
+}
+
+.TrackBody_titleTextWrapper,
+.TrackBodyFav_titleTextWrapper {
+    display: inline-flex;
+    width: 80%;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.TrackBody_titleTextWrapper p,
+.TrackBodyFav_titleTextWrapper p {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.TrackBody_title img,
+.TrackBodyFav_title img {
+    cursor: pointer;
+    height: 60px;
+    margin-right: 20px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    vertical-align: middle;
+}
+
+.TrackBody_titleArtist {
+    font-size: 12px;
+}
+
+.TrackBody_titleName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Spacing */
+.TrackTable_spacing {
+    width: 2.5%;
+}
+
+/* Fav or Genre Column */
+.TrackHeader_favAmount,
+.TrackBody_favAmount {
+    width: 8%;
+    text-align: right;
+    min-width: 60px;
+}
+
+.TrackHeader_genre,
+.TrackBody_genre {
+    width: 10%;
+    text-align: right;
+    min-width: 90px;
+}
+
+.TrackBody_favAmount,
+.TrackBody_genre {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#TrackGenre,
+#TrackFavAmount {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Button & Duration Column */
+.TrackHeader_btnControl,
+.TrackBody_btnControl {
+    width: 7%;
+    min-width: 70px;
+}
+
+#TrackBody_btnWrapper,
+#TrackDuration {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#TrackBody_btnWrapper {
+    height: 40px;
+    min-width: 80px;
+    justify-content: flex-end;
+}
+
+.TrackHeader_duration,
+.TrackBody_duration {
+    width: 5%;
+    min-width: 40px;
+}
+
+.TrackBody_duration {
+    text-align: right;
+}
+
+.SortArrow {
+    color: rgb(255, 140, 0);
+}
+
+.TrackHeader_moreBtn,
+.TrackBody_moreBtn {
+    width: 2%;
+    min-width: 40px;
+}
+
+@media (max-width: 1000px) {
+    .TrackHeader_title {
+        width: 75%;
+    }
+
+    .TrackHeaderFav_title {
+        width: 60.5%;
+    }
+}
+
+@media (max-width: 650px) {
+    .TrackBody_title img,
+    .TrackBodyFav_title img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .TrackTable_container {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 540px) {
+    .TrackHeader_favAmount,
+    .TrackBody_favAmount,
+    .TrackHeader_genre,
+    .TrackBody_genre,
+    .TrackHeader_rowCounter,
+    .TrackBody_rowCounter {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .TrackBodyFav_title img,
+    .TrackBody_title img {
+        display: none;
+    }
+
+    .TrackBody_titleTextWrapper,
+    .TrackBodyFav_titleTextWrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .TrackBody_titleTextWrapper p,
+    .TrackBodyFav_titleTextWrapper p {
+        font-size: 12px;
+    }
+}

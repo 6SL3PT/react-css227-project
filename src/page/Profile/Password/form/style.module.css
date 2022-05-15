@@ -1,0 +1,86 @@
+.MainContent_elementWrapper {
+    width: 85%;
+    margin: auto;
+    color: black;
+}
+
+.MainContent_elementWrapper h1 {
+    margin: 0;
+}
+
+#SubmitSuccessStatus {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #ff8c00;
+}
+
+#SubmitSuccessStatus svg {
+    margin-right: 10px;
+}
+
+.MainContent_pwdChange button {
+    float: right;
+    margin: 2em 0 2em 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+#CancelBtn {
+    color: #696969;
+    background-color: transparent;
+}
+
+#CancelBtn:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#SubmitBtn {
+    border-radius: 20px;
+    background-color: #ff8c00;
+}
+
+#SubmitBtn:hover {
+    box-shadow: 0px 0px 0px 2px white inset;
+}
+
+.PwdChange_formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.PwdChange_formGroup input[type='password'] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: solid grey 1px;
+    border-radius: 2px;
+}
+
+.PwdChange_formLabelGroup {
+    margin-top: 1em;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.PwdChangeForm_errorMessage {
+    font-weight: 500;
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+
+.PwdChangeForm_errorMessage img {
+    height: 12px;
+    padding-right: 5px;
+}
+
+@media (max-width: 785px) {
+    .MainContent_elementWrapper {
+        width: 95%;
+    }
+}

@@ -1,0 +1,140 @@
+.Container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.RegisterForm {
+    color: black;
+    font-weight: 300;
+    font-size: 12px;
+    max-width: 450px;
+    padding-top: 50px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.RegisterForm img {
+    height: 40px;
+}
+
+.RegisterForm h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.RegisterForm a:hover {
+    color: crimson;
+    transition: ease-out 0.3s;
+}
+
+.RegisterForm h1,
+.RegisterForm_formLabelGroup {
+    font-weight: 700;
+}
+
+.RegisterForm_formLabelGroup {
+    text-align: left;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+#RegisterForm_form input[type='text'],
+#RegisterForm_form input[type='password'] {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border: solid grey 1px;
+    border-radius: 2px;
+}
+
+.RegisterForm_dob {
+    display: flex;
+    justify-content: space-between;
+}
+
+.RegisterForm_dobDate {
+    width: 20%;
+}
+
+.RegisterForm_dobMonth {
+    width: 40%;
+    text-align: left;
+}
+
+.RegisterForm_dobMonth select {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.RegisterForm_dobYear {
+    width: 25%;
+}
+
+.RegisterForm_genderRadio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, max-content));
+    grid-gap: 15px;
+}
+
+.RegisterForm_genderType {
+    text-align: left;
+}
+
+.RegisterForm_genderType label[for='radio-male'],
+.RegisterForm_genderType label[for='radio-female'],
+.RegisterForm_genderType label[for='radio-non-bi'] {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.RegisterForm_genderType input[type='radio'] {
+    margin: 3px 3px 0px 0px;
+    cursor: pointer;
+}
+
+.RegisterForm_agreement {
+    margin-top: 40px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.RegisterForm button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+.RegisterForm h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.RegisterForm_errorMessage {
+    font-weight: 500;
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.RegisterForm_errorMessage img {
+    height: 12px;
+    padding-right: 5px;
+}
+
+/* @media (max-width: 545px) {
+    .RegisterForm_genderRadio {
+        display: block;
+    }
+
+    .RegisterForm_genderType {
+        text-align: left;
+    }
+} */

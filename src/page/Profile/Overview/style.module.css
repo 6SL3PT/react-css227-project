@@ -1,0 +1,97 @@
+.MainContent_elementWrapper {
+    width: 85%;
+    margin: auto;
+    color: black;
+}
+
+.MainContent_elementWrapper h1 {
+    margin: 0;
+}
+
+.MainContent_typeHeader {
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.MainContent_profile button,
+.MainContent_package button {
+    margin-bottom: 1.33em;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #696969;
+    box-shadow: 0px 0px 0px 2px #696969 inset;
+    background-color: transparent;
+}
+
+.MainContent_profile button:hover,
+.MainContent_package button:hover {
+    color: black;
+    box-shadow: 0px 0px 0px 2px black inset;
+}
+
+.ProfileContent {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.33em;
+}
+
+.ProfileContent_row {
+    border-bottom: #999 1px solid;
+}
+
+.ProfileContent_colFields {
+    color: #999;
+    padding: 1em 1em 1em 0;
+}
+
+.ProfileContent_colValue {
+    padding: 1em 0;
+}
+
+.PackageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7d7d7;
+    margin-bottom: 1.33em;
+    border: rgb(135, 135, 135) 1px solid;
+}
+
+#PackageDetail {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 20px 20px;
+}
+
+.PackageContent_textWrapper,
+.PackageContent_textWrapperFree {
+    padding: 20px 0;
+    width: 100%;
+    height: 100px;
+}
+
+.PackageContent_textWrapper p,
+.PackageContent_textWrapper h1,
+.PackageContent_textWrapperFree p,
+.PackageContent_textWrapperFree h1 {
+    margin-left: 20px;
+}
+
+.PackageContent_textWrapper {
+    color: black;
+    background: linear-gradient(-90deg, white 0%, #e1cd8c 100%);
+}
+
+.PackageContent_textWrapperFree {
+    color: white;
+    background: linear-gradient(-90deg, #0026ad 0%, black 100%);
+}
+
+@media (max-width: 785px) {
+    .MainContent_elementWrapper {
+        width: 95%;
+    }
+}

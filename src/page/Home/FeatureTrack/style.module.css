@@ -1,0 +1,109 @@
+.FeatureTrack_container {
+    width: 18%;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+}
+
+.FeatureTrack_mainWrapper {
+    width: 100%;
+    position: relative;
+}
+
+.FeatureTrack_image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.FeatureTrack_btnWrapper {
+    transition: opacity 0.3s;
+    opacity: 1;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent);
+}
+
+.FeatureTrack_btnWrapper___isHide {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#PlayBtn svg {
+    width: 50px;
+    height: 50px;
+}
+
+#PlayBtn button {
+    background-color: rgba(255, 140, 0, 0.6);
+    width: 80px;
+    height: 80px;
+}
+
+#PlayBtn button:hover {
+    background-color: #ff8c00;
+}
+
+.FeatureTrack_name,
+.FeatureTrack_artist {
+    width: 8vw;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.FeatureTrack_name {
+    margin: 3% 0.5vw 0 0.5vw;
+    color: black;
+    font-size: 0.9rem;
+    line-height: 1rem;
+}
+
+.FeatureTrack_name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.FeatureTrack_artist {
+    margin: 0 0 0 0.5vw;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 1080px) {
+    .FeatureTrack_name,
+    .FeatureTrack_artist {
+        width: 16vw;
+    }
+
+    .FeatureTrack_name {
+        font-size: 16px;
+    }
+
+    .FeatureTrack_artist {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    .FeatureTrack_container {
+        width: 90%;
+    }
+
+    .FeatureTrack_name,
+    .FeatureTrack_artist {
+        width: 37vw;
+    }
+}

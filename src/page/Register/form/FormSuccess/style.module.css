@@ -1,0 +1,48 @@
+.Container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Success_content {
+    color: black;
+    max-width: 450px;
+    padding-top: 50px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.Success_content img {
+    height: 40px;
+}
+
+.Success_content h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.Success_content button {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 5px 40px;
+}
+
+.Success_contentMainText h4 {
+    font-size: 18px;
+}
+
+.Success_contentMainText img {
+    margin: 20px 0;
+    height: 150px;
+}
+
+.Success_contentMainText p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Success_contentMainText a:hover {
+    color: crimson;
+    transition: ease-out 0.3s;
+}

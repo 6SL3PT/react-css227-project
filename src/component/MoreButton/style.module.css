@@ -1,0 +1,41 @@
+#MoreBtn svg {
+    color: white;
+}
+
+.MoreOption_dropdown,
+.MoreOption_dropdown___isExpand {
+    position: absolute;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 4px;
+    padding: 1px 0;
+    z-index: 900;
+}
+
+.MoreOption_dropdown {
+    width: 150px;
+    transform: translateX(-115px);
+}
+
+.MoreOption_dropdown___isExpand {
+    width: 230px;
+    transform: translateX(-200px);
+}
+
+.MoreOption_dropdown p,
+.MoreOption_dropdown___isExpand p {
+    padding-left: 10px;
+    margin: 0;
+    user-select: none;
+}
+
+.MoreOption_dropdown p:hover,
+.MoreOption_dropdown___isExpand p:hover {
+    border-radius: 2px;
+    background-color: #ff8c00cc;
+    cursor: pointer;
+}
+
+.MoreOption_dropdown___isExpand p:first-child {
+    border-bottom: #333 solid 1px;
+}

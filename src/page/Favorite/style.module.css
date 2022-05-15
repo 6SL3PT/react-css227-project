@@ -1,0 +1,174 @@
+#Favorite {
+    padding: 100px 0;
+    color: white;
+}
+
+.FavContentWrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.FavContent_favDetailWrapper {
+    width: 100%;
+}
+
+.FavDetail_topElementWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.FavDetail_image {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(112.46deg, #ff8c00 3.13%, black 120.7%);
+}
+
+.FavDetail_image svg {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.FavDetail_topElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.FavDetail_previewText h1,
+.FavDetail_previewText p {
+    margin: 0;
+}
+
+.FavDetail_previewText h1 {
+    padding-top: 10px;
+    font-size: min(3vmax, 30px);
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#Type {
+    padding-top: 20px;
+    font-size: min(3vmax, 15px);
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#Author {
+    display: flex;
+}
+
+#Author svg {
+    padding-left: 20px;
+}
+
+.FavDetail_btnControl {
+    display: flex;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+.FavDetail_btnControl button {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+/* .FavDetail_btnControl button:first-child {
+    margin-right: 5px;
+} */
+
+.FavContent_bottomElementWrapper {
+    margin-top: 50px;
+}
+
+.FavTracksWrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.FavTracksWrapper p {
+    padding-left: 10px;
+    margin: 0;
+}
+
+@media (max-width: 980px) {
+    .FavContent_favDetailWrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width: 585px) {
+    .FavContentWrapper {
+        width: 98%;
+    }
+
+    .FavDetail_image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .FavDetail_image svg {
+        height: 100px;
+        width: 100px;
+    }
+
+    #Type {
+        padding-top: 5px;
+    }
+
+    .FavDetail_btnControl {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 465px) {
+    .FavDetail_topElementWrapper {
+        margin: 0 auto;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .FavDetail_image {
+        height: 30vw;
+        width: 30vw;
+    }
+
+    .FavDetail_image svg {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .FavEdit_mainElement {
+        max-width: 260px;
+    }
+
+    .FavDetail_previewText h1 {
+        padding-top: 0;
+    }
+
+    #Type {
+        display: none;
+    }
+
+    .FavDetail_btnControl {
+        padding-bottom: 0;
+        gap: 2px;
+        height: 40px;
+    }
+
+    .FavDetail_btnControl button {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .FavDetail_btnControl > button > svg {
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -1,0 +1,31 @@
+@keyframes fadeIn {
+    from {
+        transform: translateY(-5%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#FavBtn {
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#LikedTrack,
+#NotLikedTrack {
+    animation: fadeIn 1s;
+}
+
+#LikedTrack {
+    color: #ff8c00;
+}
+
+#NotLikedTrack {
+    color: white;
+}

@@ -1,0 +1,301 @@
+#Playlist {
+    padding: 100px 0;
+    color: white;
+}
+
+.PlaylistContentWrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.PlaylistContent_playlistDetailWrapper {
+    width: 100%;
+}
+
+.PlaylistDetail_topElementWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.PlaylistDetail_topElementWrapper img {
+    height: 250px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.PlaylistDetail_topElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.PlaylistDetail_previewText h1,
+.PlaylistDetail_previewText p {
+    margin: 0;
+}
+
+.PlaylistDetail_previewText h1 {
+    padding-top: 10px;
+    font-size: min(3vmax, 30px);
+    line-height: 1.2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#Type {
+    padding-top: 20px;
+    font-size: min(3vmax, 15px);
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.PreviewText_subDetail {
+    display: flex;
+}
+
+.SubDetail_authorName,
+.SubDetail_trackAmount {
+    display: flex;
+    align-items: center;
+}
+
+.SubDetail_authorName p {
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.SubDetail_authorName svg {
+    height: 15px;
+    width: 15px;
+    color: #ff8c00;
+    padding-left: 5px;
+}
+
+.SubDetail_trackAmount svg {
+    padding-left: 20px;
+}
+
+.PlaylistDetail_btnControl {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 60px;
+}
+
+.PlaylistDetail_btnControl button {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+/* .PlaylistDetail_btnControl button:first-child {
+    margin-right: 5px;
+} */
+
+/* .PlaylistDetail_btnControl > button:first-child > svg {
+    height: 30px;
+    width: 30px;
+} */
+
+.PlaylistPopupWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.PlaylistEdit_mainElement {
+    background-color: #333;
+    margin: 0 auto;
+    transform: translateY(50%);
+    width: 700px;
+    height: 370px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.PlaylistDelete_mainElement {
+    background-color: #333;
+    margin: 0 auto;
+    transform: translateY(180%);
+    width: 300px;
+    height: 115px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.PlaylistDelete_mainElement h3 {
+    margin: 0;
+}
+
+.PlaylistDelete_mainElement p {
+    font-size: 12px;
+    margin: 0 0 15px 0;
+}
+
+.PlaylistDelete_mainElement button {
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+#CancelBtn {
+    background-color: transparent;
+    margin-right: 105px;
+}
+
+#CancelBtn:hover {
+    text-decoration: underline;
+}
+
+.PlaylistContent_bottomElementWrapper h3 {
+    padding: 30px 0 0 10px;
+}
+
+.PlaylistAboutWrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    overscroll-behavior: none;
+}
+
+.PlaylistAboutWrapper p {
+    padding: 10px;
+    margin: 0;
+}
+
+.PlaylistAboutWrapper::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.PlaylistAboutWrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 8px;
+}
+
+.PlaylistTracksWrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.PlaylistTracksWrapper p {
+    padding-left: 10px;
+    margin: 0;
+}
+
+@media (max-width: 1080px) {
+    .PlaylistEdit_mainElement {
+        transform: translateY(20%);
+    }
+}
+
+@media (max-width: 980px) {
+    .PlaylistContent_playlistDetailWrapper {
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .PlaylistEdit_mainElement {
+        width: 400px;
+    }
+}
+
+@media (max-width: 660px) {
+    .PlaylistContentWrapper {
+        width: 98%;
+    }
+
+    .PlaylistDetail_topElementWrapper img {
+        height: 200px;
+    }
+
+    #Type {
+        padding-top: 5px;
+    }
+
+    .PlaylistDetail_btnControl {
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 530px) {
+    .PlaylistDetail_topElementWrapper {
+        margin: 0 auto;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .PlaylistDetail_topElementWrapper img {
+        height: 30vw;
+    }
+
+    .PreviewText_subDetail {
+        font-size: 12px;
+    }
+
+    .SubDetail_authorName p {
+        max-width: 60px;
+    }
+
+    .SubDetail_authorName svg {
+        padding-left: 0px;
+    }
+
+    .SubDetail_trackAmount svg {
+        padding-left: 5px;
+    }
+
+    .PlaylistEdit_mainElement {
+        max-width: 260px;
+    }
+
+    .PlaylistDetail_previewText h1 {
+        padding-top: 0;
+    }
+
+    #Type {
+        display: none;
+    }
+
+    .PlaylistDetail_btnControl {
+        padding-bottom: 0;
+        gap: 2px;
+        height: 40px;
+    }
+
+    .PlaylistDetail_btnControl button {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .PlaylistDetail_btnControl > button > svg {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width: 340px) {
+    .PlaylistDetail_btnControl button {
+        height: 35px !important;
+        width: 35px !important;
+    }
+
+    .PlaylistDetail_btnControl svg {
+        height: 20px !important;
+        width: 20px !important;
+    }
+}

@@ -1,0 +1,282 @@
+@keyframes playerFadeInUp {
+    from {
+        transform: translate(0, 40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes volumeBarFadeInUp {
+    from {
+        transform: translate(-40%, -350%) rotate(-90deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-40%, -400%) rotate(-90deg);
+        opacity: 1;
+    }
+}
+
+#MediaPlayer {
+    animation: playerFadeInUp 1s;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    z-index: 1000;
+    border-top: #ff8c00 1px solid;
+}
+
+.MediaPlayer_container {
+    width: 95%;
+    height: 80px;
+    margin: auto;
+    overflow: visible;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.MediaPlayer_leftElementWrapper {
+    height: 100%;
+    width: 55%;
+    display: flex;
+    gap: 10px;
+}
+
+.MediaPlayer_btnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.MediaPlayer_btnWrapper button {
+    color: white;
+    padding: 0;
+}
+
+#PlayBtn {
+    background-color: #ff8c00;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+#PlayBtn svg {
+    height: 30px;
+    width: 30px;
+}
+
+#PrevBtn,
+#NextBtn {
+    display: flex;
+    cursor: pointer;
+}
+
+#PrevBtn svg,
+#NextBtn svg {
+    height: 40px;
+    width: 40px;
+}
+
+.MediaPlayer_progressBarWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    color: #e5e5e5b3;
+    font-size: 12px;
+}
+
+.MediaPlayer_progressBarWrapper p {
+    width: 30px;
+}
+
+#MaxTime {
+    text-align: right;
+}
+
+#ProgressBar,
+#VolumeBar,
+#VolumeBar___isHide {
+    border-radius: 26px;
+    height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+#ProgressBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#ProgressBar::-webkit-slider-thumb,
+#VolumeBar::-webkit-slider-thumb,
+#VolumeBar___isHide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
+#ProgressBar:hover::-webkit-slider-thumb,
+#VolumeBar:hover::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+}
+
+.MediaPlayer_rightElementWrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100%;
+    float: right;
+    width: 42%;
+    gap: 10px;
+}
+
+.MediaPlayer_trackWrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.TrackWrapper_trackDetail {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.TrackWrapper_trackDetail img {
+    height: 60px;
+    width: 60px;
+}
+
+.TrackDetail_trackText p {
+    color: white;
+    line-height: 1.2em;
+    margin: 0;
+    text-align: right;
+}
+
+#TrackName:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#TrackArtist {
+    font-size: 12px;
+    color: rgb(126, 126, 126);
+}
+
+.TrackWrapper_controlBtn {
+    display: flex;
+    align-items: center;
+}
+
+.TrackWrapper_verticalLine {
+    border-left: 2px solid rgba(255, 140, 0, 0.6);
+    margin: 0 9px 0 10px;
+}
+
+.TrackWrapper_soundControlBtnWrapper {
+    align-items: center;
+    justify-content: column-reverse;
+    color: white;
+}
+
+#VolumeBtn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#VolumeBar {
+    position: absolute;
+    width: 100px;
+    border: solid black 10px;
+    outline: solid #ff8c00 3px;
+    animation: volumeBarFadeInUp 0.5s;
+    transform: translate(-40%, -400%) rotate(-90deg);
+    z-index: 950;
+}
+
+@media (max-width: 1080px) {
+    .MediaPlayer_container {
+        height: 200px;
+        flex-direction: column-reverse;
+    }
+
+    .MediaPlayer_leftElementWrapper {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .MediaPlayer_rightElementWrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .MediaPlayer_btnWrapper {
+        margin: 0 auto 15px auto;
+    }
+
+    .MediaPlayer_trackWrapper {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .TrackWrapper_trackDetail {
+        flex-direction: row-reverse;
+        white-space: nowrap;
+        box-sizing: border-box;
+    }
+
+    .TrackDetail_trackText p {
+        width: 53vw;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 590px) {
+    .TrackDetail_trackText p {
+        width: 40vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 420px) {
+    .TrackDetail_trackText p {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 300px) {
+    .TrackWrapper_trackDetail img {
+        display: none;
+    }
+
+    .TrackDetail_trackText p {
+        max-width: 40vw;
+    }
+}

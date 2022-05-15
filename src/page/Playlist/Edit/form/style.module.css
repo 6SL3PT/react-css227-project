@@ -1,0 +1,82 @@
+.MainContent_editPlaylist button {
+    float: right;
+    margin: 2em 0 2em 10px;
+    font-weight: 500;
+}
+
+#SubmitBtn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+}
+
+#SubmitBtn:hover {
+    box-shadow: 0px 0px 0px 2px white inset;
+}
+
+#CancelBtn {
+    padding-top: 10px;
+    color: grey;
+    background-color: transparent;
+}
+
+#CancelBtn:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.EditPlaylist_formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.EditPlaylist_formGroup input[type='text'],
+.EditPlaylist_formGroup textarea {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border: solid grey 1px;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.EditPlaylist_formGroup input[type='text'] {
+    overflow-x: scroll;
+}
+
+.EditPlaylist_formGroup textarea {
+    resize: none;
+    height: 80px;
+    overflow-y: scroll;
+    overflow-x: none;
+    overscroll-behavior: none;
+}
+
+.EditPlaylist_formGroup textarea::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.EditPlaylist_formGroup textarea::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.EditPlaylist_formLabelGroup {
+    margin-top: 1em;
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.PlaylistEditForm_errorMessage {
+    font-weight: 500;
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+
+.PlaylistEditForm_errorMessage img {
+    height: 12px;
+    padding-right: 5px;
+}

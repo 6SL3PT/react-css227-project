@@ -1,0 +1,102 @@
+#Library {
+    padding-top: 60px;
+    width: 80%;
+    margin: 0 auto 100px auto;
+}
+
+#Library h3 {
+    color: white;
+}
+
+#Library_favTrack {
+    background: linear-gradient(112.46deg, #ff8c00 3.13%, black 120.7%);
+    color: white;
+    border-radius: 8px;
+    height: 242.45px;
+    cursor: pointer;
+}
+
+#Library_favTrack h1 {
+    padding-top: 25px;
+}
+
+#Library_favTrack h1,
+#Library_favTrack p {
+    padding-left: 25px;
+    margin: 0;
+}
+
+#Library_createPlaylist {
+    color: white;
+    box-shadow: 0 0 0 3px white inset;
+    text-align: center;
+    border-radius: 8px;
+    height: 242.45px;
+    cursor: pointer;
+}
+
+#Library_createPlaylist svg {
+    padding-top: 40px;
+    height: 100px;
+    width: 100px;
+}
+
+#Library_createPlaylist p {
+    margin: 0;
+}
+
+.playlistContainer_frameWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, max-content));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.playlistContainer_frameWrapper div:first-child {
+    grid-column: span 2;
+}
+
+@media (max-width: 630px) {
+    #Library {
+        width: 98%;
+    }
+
+    .playlistWrapper_container {
+        max-height: 170px;
+    }
+
+    #Library_favTrack,
+    #Library_createPlaylist {
+        height: 165.2px;
+    }
+
+    #Library_favTrack h1 {
+        font-size: 22px;
+    }
+
+    #Library_createPlaylist {
+        font-size: 12px;
+    }
+
+    #Library_createPlaylist svg {
+        padding-top: 10px;
+    }
+
+    .playlistContainer_frameWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+    }
+}
+
+@media (max-width: 400px) {
+    .playlistWrapper_container {
+        max-height: 200px;
+    }
+
+    #Library_createPlaylist {
+        height: 196.1px;
+    }
+
+    .playlistContainer_frameWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+    }
+}

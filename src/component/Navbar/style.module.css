@@ -1,0 +1,199 @@
+@keyframes fadeInDown {
+    from {
+        transform: translate(-50%, -5%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}
+
+.Navbar {
+    transition: ease-in 0.2s;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    z-index: 1000;
+}
+
+.Navbar___isChangeBackground {
+    position: fixed;
+    width: 100%;
+    transition: ease-in 0.2s;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0px -1px 0px 0px #ff8c00;
+    z-index: 1000;
+}
+
+.Container {
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    overflow: visible;
+}
+
+.Navbar_leftElement {
+    float: left;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+    height: 100%;
+}
+
+#Logo {
+    height: 28px;
+    width: auto;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.Navbar_list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    user-select: none;
+}
+
+.Navbar_list a {
+    color: white;
+    text-decoration: none;
+}
+
+.Navbar_list a:hover {
+    color: rgb(255, 140, 0);
+}
+
+.Navbar_rightElement {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.Navbar_dropdown {
+    user-select: none;
+}
+
+.Dropdown_head {
+    padding: 3px 8px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    max-width: 91px;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Dropdown_head p {
+    display: inline;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.Dropdown_head svg {
+    color: white;
+}
+
+.Dropdown_head:hover {
+    background-color: #232528;
+    transition: ease-in 0.1s;
+    box-shadow: 0px 0px 0px 1px rgb(255, 140, 0) inset;
+}
+
+.___isDisplayBorder {
+    transition: ease-in 0.2s;
+    box-shadow: 0px 0px 0px 1px rgb(255, 140, 0) inset;
+}
+
+.Dropdown_body {
+    position: absolute;
+    padding: 0;
+    border: black solid 3px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 2px black inset;
+    top: 45px;
+    transform: translateX(-50%);
+    animation: fadeInDown 0.3s;
+}
+
+.Dropdown_body a {
+    text-decoration: none;
+}
+
+.Dropdown_bodyList {
+    width: 200px;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.Dropdown_bodyList:hover {
+    background-color: #ff8c00cc;
+    border-radius: 2px;
+}
+
+#LogOutBtn {
+    border-top: #232528 solid 2px;
+}
+
+#SignInBtn {
+    background-color: transparent;
+    border: white solid 1px;
+    margin-right: 5px;
+}
+
+#CreateBtn {
+    line-height: 1.7em;
+}
+
+#SearchCircle {
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+#SearchCircle:hover {
+    transition: 0.3s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .Container {
+        width: 95%;
+    }
+
+    .Navbar_leftElement {
+        gap: 0;
+    }
+
+    #Logo {
+        display: none;
+    }
+}
+
+@media (max-width: 280px) {
+    .Navbar_list {
+        font-size: 14px;
+    }
+}
