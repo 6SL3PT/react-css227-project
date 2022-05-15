@@ -1,0 +1,162 @@
+.MainContent_elementWrapper {
+    margin: auto;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.MainContent_elementWrapper h3 {
+    margin: 0;
+}
+
+.MainContent_addUser button {
+    float: right;
+    margin: 1em 0 1em 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.MainContent_inputWrapper {
+    height: 360px;
+    overflow-y: scroll;
+}
+
+.MainContent_inputWrapper::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.MainContent_inputWrapper::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+#CancelBtn {
+    color: white;
+    background-color: transparent;
+}
+
+#CancelBtn:hover {
+    text-decoration: underline;
+}
+
+#SubmitBtn {
+    border-radius: 20px;
+    background-color: #ff8c00;
+}
+
+#SubmitBtn:hover {
+    box-shadow: 0px 0px 0px 2px white inset;
+}
+
+.AddUser_formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.AddUser_formGroup input[type='text'],
+.AddUser_formGroup input[type='password'],
+.AddUser_formGroup select {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border: solid grey 1px;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.AddUser_formLabelGroup {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.AddUser_dobWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddUser_dobDate {
+    width: 20%;
+}
+
+.AddUser_dobMonth {
+    width: 50%;
+}
+
+.AddUser_dobMonth select {
+    padding: 7.25px;
+    cursor: pointer;
+}
+
+.AddUser_dobYear {
+    width: 25%;
+}
+
+.AddUser_dobDate input,
+.AddUser_dobMonth select,
+.AddUser_dobYear input {
+    width: 100%;
+}
+
+.AddUser_genderRadio {
+    display: flex;
+}
+
+.radioWrapper {
+    display: flex;
+    align-items: top;
+}
+
+.radioWrapper input {
+    cursor: pointer;
+}
+
+.radioWrapper label {
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 30px;
+    transform: translateY(-8%);
+}
+
+.AddUser_errorMessage {
+    font-weight: 500;
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+
+.AddUser_errorMessage img {
+    height: 12px;
+    padding-right: 5px;
+}
+
+.AddUser_genderRadio .AddUser_errorMessage {
+    display: flex;
+    align-items: center;
+    height: 25.6px;
+    transform: translateY(-8%);
+}
+
+@media (max-width: 550px) {
+    .radioWrapper label {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 475px) {
+    .AddUser_genderRadio {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 300px) {
+    .AddUser_dobWrapper {
+        display: inline-block;
+    }
+
+    .AddUser_dobDate,
+    .AddUser_dobMonth,
+    .AddUser_dobYear {
+        width: 100%;
+    }
+}

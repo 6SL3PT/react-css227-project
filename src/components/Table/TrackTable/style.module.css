@@ -1,0 +1,323 @@
+.TrackTable_container {
+    width: 98%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.TrackTable_container table {
+    table-layout: fixed;
+}
+
+.TrackTable_container td {
+    max-width: 0;
+}
+
+.TrackTable_container thead tr {
+    user-select: none;
+    box-shadow: 0 1px 0 0 inset grey, 0 -1px 0 0 inset grey;
+}
+
+.___isSortable thead tr th:not(:last-child):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.TrackTable_container thead::after {
+    content: '';
+    display: block;
+    height: 10px;
+}
+
+.TrackTable_container tbody {
+    display: block;
+    height: 310px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.TrackTable_container thead,
+.TrackTable_container tbody tr {
+    display: table;
+    width: 100%;
+}
+
+.TrackTable_container tbody::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.TrackTable_container tbody::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border-radius: 4px;
+}
+
+.TrackTable_container tbody tr > td {
+    padding: 5px 0;
+}
+
+/* ID Column */
+
+.TrackHeader_id {
+    font-size: 12px;
+}
+
+.TrackHeader_id svg {
+    vertical-align: middle;
+}
+
+.TrackBody_id {
+    font-size: 10px;
+}
+
+.TrackHeader_id,
+.TrackBody_id {
+    width: 20%;
+    min-width: 155px;
+    text-align: left;
+}
+
+/* Title Column */
+.TrackHeader_title {
+    font-size: 12px;
+    width: 35%;
+    text-align: left;
+    display: flex;
+}
+
+.TrackBody_title {
+    width: 35%;
+    white-space: nowrap;
+}
+
+.TrackBody_titleTextWrapper {
+    display: inline-flex;
+    width: 90%;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.TrackBody_titleTextWrapper p {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+}
+
+.TrackBody_titleName {
+    font-size: 12px;
+}
+
+.TrackBody_titleArtist {
+    font-size: 10px;
+}
+
+/* Spacing */
+.TrackTable_spacing {
+    width: 2.5%;
+}
+
+/* Fav or Genre Column */
+.TrackHeader_favAmount,
+.TrackHeader_genre {
+    font-size: 12px;
+}
+
+.TrackHeader_favAmount,
+.TrackBody_favAmount {
+    width: 8%;
+    text-align: right;
+    min-width: 60px;
+}
+
+.TrackHeader_genre,
+.TrackBody_genre {
+    width: 9%;
+    text-align: right;
+    min-width: 70px;
+}
+
+.TrackBody_favAmount,
+.TrackBody_genre {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#TrackGenre,
+#TrackFavAmount {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Button & Duration Column */
+.TrackHeader_btnControl,
+.TrackBody_btnControl {
+    width: 16%;
+    min-width: 125px;
+}
+
+.___isNarrow {
+    width: 5%;
+    min-width: 50px;
+}
+
+#TrackBody_btnWrapper,
+#TrackDuration {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#TrackDuration svg:last-child {
+    height: 15px;
+    width: 15px;
+}
+
+#TrackBody_btnWrapper {
+    height: 40px;
+    min-width: 80px;
+}
+
+.TrackHeader_duration,
+.TrackBody_duration {
+    width: 5%;
+    min-width: 40px;
+}
+
+.TrackBody_duration {
+    font-size: 12px;
+    text-align: right;
+}
+
+.SortArrow {
+    color: black;
+}
+
+/* Sub Detail */
+.TrackBody_fullDetailRow {
+    background-color: rgb(249, 249, 249);
+}
+
+.TrackBody_fullDetailColumn {
+    width: 45%;
+}
+
+.TrackBody_fullDetailColumn h3 {
+    font-size: 12px;
+    padding-left: 5px;
+    margin: 0;
+    text-align: left;
+}
+
+.TrackBody_fullDetailColumn img {
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    padding-left: 20px;
+}
+
+.TrackBody_fullDetailWrapper {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    background-color: #e5e5e5;
+    border-radius: 4px;
+}
+
+.TrackBody_fullDetailColumn:first-child {
+    padding-left: 5px;
+}
+
+.TrackBody_fullDetailColumn:last-child {
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+.TrackBody_fullDetailColumn:last-child .TrackBody_fullDetailWrapper {
+    height: 208px !important;
+}
+
+.TrackBody_fullDetailWrapper::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.TrackBody_fullDetailWrapper::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #b8b8b8;
+}
+
+.TrackBody_trackDetail {
+    padding-left: 10px;
+    margin: 0;
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.TrackBody_fullDetailColumn:first-child .TrackBody_trackDetail {
+    padding-left: 15px;
+}
+
+@media (max-width: 1040px) {
+    .TrackHeader_genre,
+    .TrackBody_genre {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .TrackHeader_favAmount,
+    .TrackBody_favAmount {
+        display: none;
+    }
+
+    .TrackTable_spacing {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .TrackHeader_duration,
+    .TrackBody_duration {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .TrackHeader_id,
+    .TrackBody_id {
+        display: none;
+    }
+
+    .TrackHeader_title,
+    .TrackBody_title {
+        min-width: 0;
+    }
+
+    .TrackBody_title p {
+        width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .TrackHeader_btnControl,
+    .TrackBody_btnControl {
+        min-width: 0;
+    }
+
+    .___isNarrow #TrackBody_btnWrapper {
+        min-width: 0;
+    }
+
+    .TrackBody_fullDetailRow .TrackBody_fullDetailColumn:last-child {
+        display: none;
+    }
+}

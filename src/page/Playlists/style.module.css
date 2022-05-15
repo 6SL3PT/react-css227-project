@@ -1,0 +1,76 @@
+#Playlist {
+    height: 100vh;
+    width: 80%;
+    float: right;
+    background-image: linear-gradient(0deg, #e5e5e5 0%, #f5f7fa 74%);
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+#Playlist::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+#Playlist::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.Playlist_elementWrapper {
+    padding-top: 70px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Playlist_elementWrapper h1 {
+    color: black;
+    margin: 0 0 20px 0;
+}
+
+.PlaylistHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Playlist_paperWrapper .ElementPaper:nth-child(2) {
+    margin-top: 10px;
+}
+
+.ElementPaper {
+    padding: 10px;
+}
+
+.ElementPaper h4 {
+    margin: 0;
+}
+
+.ElementPaper table {
+    margin: auto;
+    width: 98%;
+}
+
+#OverviewTable > tbody > tr > td:first-child {
+    width: 200px;
+}
+
+#OverviewTable td {
+    font-size: 14px;
+}
+
+@media (max-width: 580px) {
+    #Playlist {
+        width: 100%;
+    }
+}
+
+@media (max-width: 325px) {
+    .Playlist_elementWrapper h1 {
+        font-size: 20px;
+    }
+
+    #OverviewTable tbody tr td {
+        font-size: 12px;
+    }
+}

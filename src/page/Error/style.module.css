@@ -1,0 +1,55 @@
+#Error {
+    height: 100vh;
+}
+
+.Container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Page_content {
+    color: black;
+    font-size: 16px;
+    padding-top: 35vmin;
+    display: flex;
+}
+
+.Page_contentImg {
+    padding-top: 70px;
+    padding-right: 2rem;
+}
+
+.Page_contentImg img {
+    height: 10vmin;
+}
+
+.Page_contentMessage a:hover {
+    color: crimson;
+    transition: ease-out 0.3s;
+}
+
+@media (max-width: 635px) {
+    .Page_contentMessage h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Page_content {
+        display: list-item;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Page_contentImg {
+        padding-right: 0;
+    }
+
+    .Page_contentMessage {
+        margin-bottom: 25vmin;
+    }
+}

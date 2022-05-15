@@ -1,0 +1,177 @@
+#Dashboard {
+    height: 100vh;
+    width: 80%;
+    float: right;
+    background-image: linear-gradient(0deg, #e5e5e5 0%, #f5f7fa 74%);
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+#Dashboard::-webkit-scrollbar,
+.ElementTable_tableWrapper::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+#Dashboard::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.Dashboard_elementWrapper {
+    padding-top: 70px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.Dashboard_elementWrapper h1 {
+    color: black;
+    margin: 0 0 20px 0;
+}
+
+.Dashboard_elementWrapperLoading {
+    text-align: center;
+}
+
+.Dashboard_loadingCircle {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Dashboard_paperWrapper,
+.ElementTable {
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+        0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.Dashboard_paperWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32%, max-content));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.ElementPaper {
+    padding: 20px 10px;
+}
+
+.ElementPaper:hover {
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%),
+        0px 1px 18px 0px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.ElementPaper h4,
+.ElementPaper p {
+    margin: 0;
+}
+
+.ElementPaper:nth-child(1) {
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+
+.ElementPaper:nth-child(2) {
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+
+.ElementPaper:nth-child(3) {
+    background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+}
+
+.ElementPaper_mainDetail {
+    margin-bottom: 40px;
+}
+
+.ElementPaper_mainDetail h4 {
+    font-size: 13px;
+}
+
+.ElementPaper_mainDetail p {
+    font-weight: 500;
+}
+
+.ElementPaper_subDetail {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.Dashboard_tableWrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32.5%, max-content));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.ElementTable {
+    height: 335px;
+    padding: 10px;
+    color: black;
+}
+
+.ElementTable_textWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ElementTable_textWrapper h4,
+.ElementTable_textWrapper p {
+    margin: 0;
+}
+
+.ElementTable_textWrapper p {
+    font-size: 12px;
+}
+
+.ElementTable_textWrapper p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ElementTable_tableWrapper {
+    border-radius: 4px;
+    padding: 0 5px;
+}
+
+.ElementTable_tableWrapper::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+@media (max-width: 1060px) {
+    .Dashboard_tableWrapper {
+        grid-gap: 5px;
+    }
+}
+
+@media (max-width: 960px) {
+    .Dashboard_paperWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(45%, max-content));
+        grid-gap: 5px;
+    }
+
+    .Dashboard_tableWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(48%, max-content));
+    }
+}
+
+@media (max-width: 580px) {
+    #Dashboard {
+        width: 100%;
+    }
+
+    .Dashboard_paperWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(95%, max-content));
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .Dashboard_tableWrapper {
+        grid-template-columns: repeat(auto-fit, minmax(100%, max-content));
+    }
+}

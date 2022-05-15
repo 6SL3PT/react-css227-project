@@ -1,0 +1,51 @@
+.AddButton {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 18px;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+.___isShrink {
+    font-size: 10px;
+    padding: 2px 5px;
+    margin-bottom: 0;
+}
+
+.AddButton svg {
+    padding-right: 5px;
+}
+
+.___isShrink svg {
+    height: 15px;
+    width: 15px;
+}
+
+.AddButton:hover {
+    box-shadow: 0 0 0 1px black inset;
+}
+
+.AddForm_containerWrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.AddFormContainer {
+    margin: 10vh auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    width: 600px;
+}
+
+@media (max-width: 650px) {
+    .AddFormContainer {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,36 @@
+.Edit_containerWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.EditContainer {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    width: 420px;
+}
+
+.___isExpanded {
+    width: 600px;
+}
+
+@media (max-width: 650px) {
+    .___isExpanded {
+        width: 80vw !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .EditContainer {
+        width: 250px;
+    }
+
+    .EditContainer_textWrapper {
+        font-size: 12px;
+    }
+}

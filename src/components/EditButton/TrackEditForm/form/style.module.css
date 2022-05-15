@@ -1,0 +1,140 @@
+.MainContent_elementWrapper {
+    margin: auto;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.MainContent_elementWrapper h3 {
+    margin: 0;
+}
+
+#SubmitSuccessStatus {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #ff8c00;
+}
+
+#SubmitSuccessStatus svg {
+    margin-right: 10px;
+}
+
+.MainContent_addTrack button {
+    float: right;
+    margin: 1em 0 1em 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.MainContent_inputWrapper {
+    height: 360px;
+    overflow-y: scroll;
+}
+
+.MainContent_inputWrapper::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.MainContent_inputWrapper::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 4px;
+}
+
+#CancelBtn {
+    color: white;
+    background-color: transparent;
+}
+
+#CancelBtn:hover {
+    text-decoration: underline;
+}
+
+#SubmitBtn {
+    border-radius: 20px;
+    background-color: #ff8c00;
+}
+
+#SubmitBtn:hover {
+    box-shadow: 0px 0px 0px 2px white inset;
+}
+
+.AddTrack_formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.AddTrack_formGroup input[type='text'],
+.AddTrack_formGroup textarea {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border: solid grey 1px;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.AddTrack_formGroup textarea {
+    resize: none;
+    height: 80px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.AddTrack_formGroup textarea::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+.AddTrack_formGroup textarea::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 4px;
+}
+
+.AddTrack_formLabelGroup {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.AddTrack_comboBoxWrapper {
+    display: flex;
+    gap: 2%;
+}
+
+.AddTrack_comboBox {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.AddTrack_trackImage {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.AddTrack_trackImage img {
+    padding-top: 6px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.AddTrack_inputWrapper {
+    width: 100%;
+}
+
+.AddTrackForm_errorMessage {
+    font-weight: 500;
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+
+.AddTrackForm_errorMessage img {
+    height: 12px;
+    padding-right: 5px;
+}

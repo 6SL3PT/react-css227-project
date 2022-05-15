@@ -1,0 +1,185 @@
+#SideBar {
+    user-select: none;
+}
+
+#SideBar p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.SideBar_extendNavBar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+
+.ExtendNavBar_headWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ExtendNavBar_headWrapper button {
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.ExtendNavBar_head {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.ExtendNavBar_head svg {
+    margin: 0 15px;
+}
+
+.ExtendNavBar_head p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ExtendNavBar_head,
+.ExtendNavBar_dropdownWrapper {
+    width: 70%;
+    margin-left: 5px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.ExtendNavBar_head {
+    box-shadow: 0 0 0 1px inset black;
+}
+
+.ExtendNavBar_dropdownWrapper {
+    box-shadow: 0 0 0 1px inset #a7a7a7;
+}
+
+.ExtendNavBar_dropdownElementWrapper {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 15px;
+    height: 40px;
+}
+
+.ExtendNavBar_dropdownElementWrapper:not(:last-child) {
+    box-shadow: 0 1px 0 0 #a7a7a7;
+}
+
+.ExtendNavBar_dropdownElement {
+    display: flex;
+    align-items: center;
+}
+
+.ExtendNavBar_dropdownWrapper .ExtendNavBar_dropdownElement {
+    gap: 15px;
+}
+
+.SideBar_mainSideBar {
+    width: 20%;
+    height: 100vh;
+    background-color: #333;
+    float: left;
+}
+
+.SideBar_titleWrapper {
+    padding-top: 70px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-size: 10px;
+    color: white;
+}
+
+.SideBar_titleWrapper img {
+    height: 25px;
+}
+
+.SideBar_titleWrapper p {
+    transform: translateY(-2px);
+}
+
+.SideBar_contentHeaderWrapper {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.SideBar_contentHeader {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.SideBar_contentHeader:hover {
+    box-shadow: inset 5px 0px 0px 0px #ff8c00;
+}
+
+.ContentHeader_elementWrapper {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ContentHeader_elementWrapper svg {
+    color: rgb(134, 134, 134);
+    padding-right: 10px;
+}
+
+.SideBar_contentHeader p {
+    color: rgb(134, 134, 134);
+    font-weight: 700;
+}
+
+.isSelected {
+    box-shadow: inset 5px 0px 0px 0px #ff8c00;
+}
+
+.isSelected p,
+.isSelected svg {
+    color: white;
+}
+
+.isSelected:hover p {
+    color: rgb(134, 134, 134);
+}
+
+@media (max-width: 920px) {
+    .SideBar_titleWrapper img {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    .ContentHeader_elementWrapper svg {
+        display: none;
+    }
+
+    .ContentHeader_elementWrapper p {
+        font-size: 12px;
+    }
+
+    .SideBar_contentHeaderWrapper .SideBar_contentHeader:last-child p {
+        color: #ff8c00;
+    }
+}
+
+@media (max-width: 580px) {
+    .SideBar_mainSideBar {
+        display: none;
+    }
+
+    .SideBar_extendNavBar {
+        display: block;
+    }
+}

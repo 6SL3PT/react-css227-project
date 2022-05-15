@@ -1,0 +1,26 @@
+.MainContent_elementWrapper {
+    margin: auto;
+    color: white;
+}
+
+.MainContent_elementWrapper h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.AddTrackToPlaylist_headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.AddTrackToPlaylist_headerWrapper svg {
+    color: white;
+}
+
+.AddTrackToPlaylist_tableWrapper {
+    background-color: white;
+    border-radius: 4px;
+}

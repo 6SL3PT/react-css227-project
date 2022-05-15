@@ -1,0 +1,88 @@
+#User {
+    height: 100vh;
+    width: 80%;
+    float: right;
+    background-image: linear-gradient(0deg, #e5e5e5 0%, #f5f7fa 74%);
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+#User::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+#User::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.User_elementWrapper {
+    padding-top: 70px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.User_elementWrapper h1 {
+    color: black;
+    margin: 0 0 20px 0;
+}
+
+.UserHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.User_paperWrapper .ElementPaper:nth-child(2) {
+    margin-top: 10px;
+}
+
+.ElementPaper {
+    padding: 10px;
+}
+
+.ElementPaper h4 {
+    margin: 0;
+}
+
+.ElementPaper table {
+    margin: auto;
+    width: 98%;
+}
+
+#OverviewTable > tbody > tr > td:first-child {
+    width: 200px;
+}
+
+#OverviewTable td {
+    font-size: 14px;
+}
+
+.OverviewTable_subDetail {
+    display: inline;
+}
+
+@media (max-width: 990px) {
+    .OverviewTable_subDetail {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 835px) {
+    .OverviewTable_subDetail {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    #User {
+        width: 100%;
+    }
+}
+
+@media (max-width: 325px) {
+    #OverviewTable tbody tr td {
+        font-size: 12px;
+    }
+}

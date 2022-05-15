@@ -1,0 +1,61 @@
+.Delete_containerWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.DeleteContainer {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    width: 420px;
+    margin: 35vh auto 0 auto;
+}
+
+.DeleteContainer_textWrapper {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.DeleteContainer_textWrapper h3,
+.DeleteContainer_textWrapper p {
+    margin: 0;
+    user-select: none;
+}
+
+.DeleteContainer_btnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.DeleteContainer_btnWrapper button {
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+.DeleteContainer_btnWrapper button:first-child {
+    background-color: transparent;
+}
+
+.DeleteContainer_btnWrapper button:first-child:hover {
+    text-decoration: underline;
+}
+
+.DeleteContainer_btnWrapper button:last-child:hover {
+    box-shadow: 0 0 0 2px inset white;
+}
+
+@media (max-width: 480px) {
+    .DeleteContainer {
+        width: 250px;
+    }
+
+    .DeleteContainer_textWrapper {
+        font-size: 12px;
+    }
+}
