@@ -1,8 +1,4 @@
 # Music Service Web Project
-
-## Server Side Branch
-This repository is created for practice & study. A music service web made with MERN stack, this branch is for server of both sites (client & admin).
-
 The original purpose of this project is to complete the assignment (KMUTT, CSS227), which had minimum functionality requirement as follow:
 
 -   [USER] Sign up, Sign in, Sign out (User / Manager)
@@ -21,5 +17,8 @@ The original purpose of this project is to complete the assignment (KMUTT, CSS22
 -   [BONUS] [USER] Buy memberships to use additional services
 -   [ADMIN] Add new songs or artists to DB
 -   [ADMIN] Delete a user from the service
+
+## Server Side Branch
+This repository is created for practice & study. A music service web made with MERN stack, this branch is for server of both sites (client & admin).
 
 I'm still at the beginners level and only studied MERN stack for one month (while making this project), I understand and apologized in case my code seems weird or bad from a senior/professional perspective, if you have any advice I'm willing to expand my knowledge.
