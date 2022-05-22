@@ -1,9 +1,7 @@
-import { useSelector } from 'react-redux'
-
 import style from './style.module.css'
-import useForm from '../useAddTrackForm'
+import useForm from '../useAddPlaylistForm'
 import alert from '../../../../images/alert.svg'
-import formValidateInfo from '../formAddTrackValidateInfo'
+import formValidateInfo from '../formAddPlaylistValidateInfo'
 import null_img from '../../../../images/null_img.png'
 import error_img from '../../../../images/error_img.png'
 
