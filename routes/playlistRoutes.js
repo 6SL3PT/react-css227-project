@@ -18,8 +18,10 @@ router.post('/', generalAuth, async (req, res) => {
     user.playlist.push(playlist._id)
     await user.save()
 
-    const allUserPlaylists = await playlistModel.find()
-    res.status(201).send({ success: true, data: playlist })
+    const newPlaylist = await playlistModel
+        .findById(playlist._id)
+        .populate('user', '_id username adminRights')
+    res.status(201).send({ success: true, data: newPlaylist })
 })
 
 // Get all playlists
@@ -104,7 +106,11 @@ router.put('/add-track', generalAuth, async (req, res) => {
         })
     }
     await playlist.save()
-    res.status(200).send({ success: true, data: playlist })
+
+    const updatedPlaylist = await playlistModel
+        .findById(playlist._id)
+        .populate('user', '_id username adminRights')
+    res.status(200).send({ success: true, data: updatedPlaylist })
 })
 
 // Remove track from playlist
@@ -128,7 +134,10 @@ router.put('/remove-track', generalAuth, async (req, res) => {
     playlist.tracks.splice(trackIndex, 1)
     await playlist.save()
 
-    res.status(200).send({ success: true, data: playlist })
+    const updatedPlaylist = await playlistModel
+        .findById(playlist._id)
+        .populate('user', '_id username adminRights')
+    res.status(200).send({ success: true, data: updatedPlaylist })
 })
 
 // Delete playlist by ID
