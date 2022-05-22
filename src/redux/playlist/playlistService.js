@@ -58,7 +58,7 @@ const createPlaylist = async (bodyData, userToken) => {
         },
     })
     if (response.data) {
-        if (response.data.data.tracks) {
+        if (response.data.data.tracks.length !== 0) {
             toast.success('Added to Playlist')
         }
         return response.data.data

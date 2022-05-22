@@ -35,7 +35,7 @@ const AddTrackToPlaylist = ({ trackId, dropdownTranslate, fixedHeight }) => {
     const handleCreateTrack = () => {
         if (user) {
             const body = {
-                name: `My Playlist #${userData.playlist.length + 1}`,
+                name: `My Playlist #${playlists.length + 1}`,
                 user: userData._id,
                 desc: '',
                 tracks: [trackId],

@@ -10,6 +10,7 @@ import axios from 'axios'
 import style from './style.module.css'
 import MoreButton from '../../component/MoreButton'
 import TrackTable from '../../component/TrackTable'
+import PlaylistPlayButton from '../../component/PlaylistPlayButton'
 
 const Favorite = () => {
     const [tracks, setTracks] = useState([])
@@ -63,7 +64,7 @@ const Favorite = () => {
                                     </p>
                                 </div>
                                 <div className={style.FavDetail_btnControl}>
-                                    {/* <PlaylistPlayButton tracks={playlist.tracks} /> */}
+                                    <PlaylistPlayButton tracks={tracks} playlistId={'fav'} />
                                     <MoreButton tracks={tracks} />
                                 </div>
                             </div>

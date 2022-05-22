@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import style from './style.module.css'
 import PlayButton from '../../component/PlayButton'
-import FavoriteBotton from '../../component/FavoriteButton'
+import FavoriteButton from '../../component/FavoriteButton'
 import AddTrackToPlaylist from '../../component/AddTrackToPlaylist'
 import MoreButton from '../../component/MoreButton'
 import default_img from '../../images/default_img.png'
@@ -66,7 +66,7 @@ const Track = () => {
                                 <div className={style.TrackDetail_btnControl}>
                                     <PlayButton track={track} />
                                     <div id={style.TrackBtn_favBtn}>
-                                        <FavoriteBotton trackId={track._id} />
+                                        <FavoriteButton trackId={track._id} />
                                     </div>
                                     <AddTrackToPlaylist
                                         trackId={track._id}

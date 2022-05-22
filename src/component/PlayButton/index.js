@@ -13,6 +13,7 @@ const PlayButton = ({ track }) => {
     const handlePlay = () => {
         if (
             currentTrack &&
+            currentTrack.track &&
             currentTrack.action === 'play' &&
             currentTrack.track._id === track._id
         ) {
@@ -35,6 +36,7 @@ const PlayButton = ({ track }) => {
     return (
         <IconButton id={style.PlayBtn} onClick={handlePlay}>
             {currentTrack &&
+            currentTrack.track &&
             currentTrack.action === 'play' &&
             currentTrack.track._id === track._id ? (
                 <PauseIcon />
