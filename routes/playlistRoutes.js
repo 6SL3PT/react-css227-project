@@ -73,9 +73,11 @@ router.put('/edit/:id', [validateObjectId, generalAuth], async (req, res) => {
         return res.status(400).send({ success: false, message: error.details[0].message })
     }
 
-    const newPlaylist = await playlistModel.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-    })
+    const newPlaylist = await playlistModel
+        .findByIdAndUpdate(req.params.id, req.body, {
+            new: true,
+        })
+        .populate('user', '_id username adminRights')
 
     res.status(200).send({ success: true, data: newPlaylist })
 })
