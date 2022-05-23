@@ -140,10 +140,6 @@ const PlaylistRow = ({ playlist, headerEnable, fullTable, btnDisplay, lineBreakC
                                     />
                                 </div>
                             </td>
-                        </>
-                    )}
-                    {fullTable && (
-                        <>
                             <td
                                 className={style.PlaylistTable_spacing}
                                 id={style.PlaylistSpacing2}
@@ -264,6 +260,8 @@ const PlaylistTable = ({
         const sortedData = data.sort((a, b) => {
             if (sortKey === 'tracks') {
                 return a[sortKey].length > b[sortKey].length ? 1 : -1
+            } else if (sortKey === 'user') {
+                return a[sortKey] > b[sortKey] ? 1 : -1
             } else {
                 return a[sortKey].toLowerCase() > b[sortKey].toLowerCase() ? 1 : -1
             }

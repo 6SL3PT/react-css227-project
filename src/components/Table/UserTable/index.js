@@ -96,10 +96,6 @@ const UserRow = ({ user, fullTable, btnDisplay, lineBreakColor }) => {
                                     ))}
                                 </div>
                             </td>
-                        </>
-                    )}
-                    {fullTable && (
-                        <>
                             <td className={style.UserTable_spacing} />
                             <td className={style.UserBody_fullDetailColumn}>
                                 <h3>Playlist Detail</h3>
