@@ -146,7 +146,7 @@ router.put('/remove-track', generalAuth, async (req, res) => {
 router.delete('/:id', [validateObjectId, generalAuth], async (req, res) => {
     const user = await userModel.findById(req.user._id)
     const playlist = await playlistModel.findById(req.params.id)
-    if (!user._id.equals(playlist.user)) {
+    if (!user._id.equals(playlist.user) && !user.adminRights) {
         return res.status(403).send({ success: false, message: 'Access denied.' })
     }
 
