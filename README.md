@@ -25,6 +25,30 @@ This repository is created for practice & study. A music service web made with M
 
 I'm still at the beginners level and only studied MERN stack for one month (while making this project), I understand and apologized in case my code seems weird or bad from a senior/professional perspective, if you have any advice I'm willing to expand my knowledge.
 
+## Website Preview
+> Note: Every table except ranking table (most favorite) are sortable.
+
+<h4>1. Home Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/homepage.png" />
+<br/>
+<h4>2. Discovery Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/discovery1.png" />
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/discovery2.png" />
+<br/>
+<h4>3. Library Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/library.png" />
+<br/>
+<h4>4. Playlist Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/playlist.png" />
+<br/>
+<h4>5. Track Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/track.png" />
+<br/>
+<h4>6. Search Page</h4>
+<span>Because I didn't work on the artist page (not in requirement) the result will show the tracks of the artist you typed.</span>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/client/preview_images/search.png" />
+<br/>   
+    
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
