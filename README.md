@@ -25,6 +25,22 @@ This repository is created for practice & study. A music service web made with M
 
 I'm still at the beginners level and only studied MERN stack for one month (while making this project), I understand and apologized in case my code seems weird or bad from a senior/professional perspective, if you have any advice I'm willing to expand my knowledge.
 
+## Website Preview
+> Note: Every table is sortable.
+
+<h4>1. Dashboard Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/admin/preview_images/dashboard.png" />
+<br/>
+<h4>2. Users Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/admin/preview_images/users.png" />
+<br/>
+<h4>3. Tracks Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/admin/preview_images/tracks.png" />
+<br/>
+<h4>4. Playlists Page</h4>
+<img src="https://github.com/6SL3PT/react-css227-project/blob/admin/preview_images/playlists.png" />
+<br/>
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
